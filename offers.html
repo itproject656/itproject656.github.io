@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+        <script>
+                 function openFunction(){
+    document.getElementById('menu').style.width='200px';
+}
+
+function closeFunction(){
+    document.getElementById('menu').style.width=' 0px';
+}
+
+window.addEventListener('mouseup',function(event){
+ 
+
+    var box=document.getElementById('menu');
+    if (EventTarget.target !=box){
+        box.style.width ='0px';
+    }
+})
+   
+        </script>
+        <title>offers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/room.css">
+    </head>
+    <body>
+        <header>
+            <a href='#home'class="logo">SeaLandin</a>
+            
+            <nav class="loginsignup">
+              <a href="login.html">login</a>
+              <a href="sign up 2.html">sign up</a>
+            </nav>
+
+            <div id="mainbox" onclick="openFunction();" >&#9776;</div>
+            <div id="menu" class="sidemenu">
+              <a href="home.html"><i class="fa-solid fa-house-chimney"></i>home</a>
+              <a href="offers.html" class="active"><i class="fa-solid fa-hand-holding-dollar"></i>offers</a>
+              <a href="Avilable days.html"><i class="fa-solid fa-calendar"></i>available days</a>
+              <a href="feedback.html"><i class="fa-solid fa-question"></i>Feedback</a>
+              <a href=""class="closebtn" onclick="closeFunction">&times;</a>
+            </div>
+          </header>
+
+         
+        
+        <div class="container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/room1.jpeg"></div>
+                        <div class="swiper-slide"><img src="images/room2.jpeg"></div>
+                        <div class="swiper-slide"><img src="images/room3.jpeg"></div>
+                        <div class="swiper-slide"><img src="images/room4.jpg"></div>
+                        <div class="swiper-slide"><img src="images/room5.jpg"></div>
+                        <div class="swiper-slide"><img src="images/room6.jpg"></div>
+                     </div>
+                     
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+  
+                </div>
+        </div>
+         
+   
+     
+    <h1>Single Room</h1>
+    <img src="images/single.jpg">
+    
+    <fieldset>
+        <legend>Room detalis</legend>
+        <p> 
+             Great rooms make great mornings. </br>
+             Breakfat included </br>
+             Air conditioning </br>
+             Refrigerator</br>
+             Microwave </br>
+             Electric kettle</br>
+             TV screen</br>
+             Free Wifi </br>
+             Bathroom.  </br>
+             
+
+            <p class="price" style="float:right;">Price per night 400$
+                <a class="button" href="booking.html">Book Now!</a>
+            </p>
+        
+        </p>
+    </fieldset>
+    
+    <h2>Double Room</h2>
+    <img src="images/double1.jpeg">
+    
+    
+    <fieldset>
+        <legend>Room detalis</legend>
+        <p>
+        If you are traveling with your friends and need to share a room, book a twin room with two single beds. </br>
+        breakfat included </br>
+        electric hot water pot </br>
+        dryer </br>
+        table lamp </br>
+        humidifier,</br>
+        bath , toilet </br>
+        wifi </br>
+        air conditioning. 
+            <p class="price" style="float:right;">Price per night 600$
+                <a class="button" href="booking.html">Book Now!</a>
+            </p>
+        </p>
+    </fieldset>
+
+    <h3>Triple Room</h3>
+    <img src="images/tripl1 (2).jpeg">
+    <fieldset>
+        <legend>Room details</legend>
+        <p>
+            A triple room in a hotel is designed to comfortably accommodate three people. It can have a fusion of either two double beds, three twin beds, or a single, double bed and a twin. 
+            When comparing this to a double room, a triple room will likely have one or more bedrooms or may often have an adjacent room to provide more space to you.
+        </p>
+    <p class="price" style="float:right;">Price per night <del>800$</del> 700$
+        <a class="button" href="booking.html">Book Now</a>
+    </p>
+    </fieldset>
+    
+        <footer>
+            <h5>contact</h5>
+            <p>Telephone:<br>01156722309<br>
+              Fax:<br>27958048<br>
+              reservation:<br>01096360003<br> 01030030030
+           </p>
+          
+           <h3>SeaLandin</h3>
+        
+           <a href="#"><i class="fa-brands fa-facebook"></i></a>
+           <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          
+          </footer>
+
+
+          <script>
+            const swiper = new Swiper('.swiper', {
+            autoplay: {
+            delay: 3000,
+            disableonInteraction: false,
+            },
+            loop: true,
+            pagination: {
+            el: '.swiper-pagination', 
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
+    
+        
+
+   
+    
+    
+    
+</body>
+
+</html>

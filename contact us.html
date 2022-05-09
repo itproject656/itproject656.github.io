@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		
+		<title> contact us </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+		<link rel="stylesheet" href="css/contact us.css">
+		
+		
+	</head>
+	<body>
+		<header>
+			<a href='#home'class="logo">SeaLandin</a>
+			<nav class="loginsignup">
+			  <a href="login.html">login</a>
+			  <a href="sign up 2.html">sign up</a>
+			</nav>
+			<div id="mainbox" onclick="openFunction();" >&#9776;</div>
+			<div id="menu" class="sidemenu">
+			  <a href="home.html"class="active"><i class="fa-solid fa-house-chimney"></i>home</a>
+			  <a href="offers.html"><i class="fa-solid fa-hand-holding-dollar"></i>offers</a>
+			  <a href="Avilable days.html"><i class="fa-solid fa-calendar"></i>available days</a>
+			  <a href="feedback.html"><i class="fa-solid fa-question"></i>Feedback</a>
+			  <a href=""class="closebtn" onclick="closeFunction">&times;</a>
+			</div>
+   
+		</header>
+		
+		<div >
+			<img src="images/1.jpeg" class="bg">
+			
+		
+		</div>
+		
+		<p class="con"><ins><b> Contact us</b></ins> </p>
+		<form>
+			<lable for="about" style="font-size: 140%; margin-left: 40px; font-family: arial ;"><b>choose the subject of your question</b> </lable><br>
+			<select id="about" name="about">
+				<option value ="questioning">What are you questioning about ? </option>
+				<option value ="service"> The service in our hotel </option>
+				<option value ="payment"> The available payment methods </option>
+				<option value ="transportation"> How to get to any branch of the hotel </option>
+				<option value ="no"> nothing above </option>
+			</select>
+			
+			<p class="con"><b><ins> Your contact information </ins></b> </p> 
+			
+			<div style="position: relative; ">
+			
+				<lable for="name" style="font-size: 140%; margin-left: 40px; font-family: arial ;" ><b> name</b> </lable> <br>
+				<input type = "text" id="name" name = "name" > <br>
+				
+				<lable for="num" style="font-size: 140%; margin-left: 40px; font-family: arial ;" ><b> phone number</b> </lable><br>
+				<input type ="text" id="num" name = "num"> <br>
+				
+				<lable for="mail" style="font-size: 140%; margin-left: 40px; font-family: arial ;"> <b>Email address</b> </lable> <br>
+				<input type ="email" id="num" name="num"><br>
+				
+				<lable for="description" style="font-size: 140%; margin-left: 40px; font-family: arial ; " > <b> Enter your question or issue below</b> </lable> <br>
+				<textarea name ="description" rows ="10" cols="20"></textarea>
+				
+				<div>
+						<input type="submit" value="submit" style="background-color:#00008B; color: white; border:none;"  > 
+				</div>
+				
+				<div class="pos_inq" >
+					
+					<p>for inquiring, call:<mark> 01156722309</mark>. </p>
+					<input type="button" value="Call us" style="width:200px;">
+				
+					
+					
+						
+				</div>
+		</form>
+		<footer>
+				<h5>contact</h5>
+				<p>Telephone:<br>01156722309<br>
+				  Fax:<br>27958048<br>
+				  reservation:<br>01096360003<br> 01030030030
+			   </p>
+			 
+			   
+			  
+				<h3>SeaLandin</h3>
+
+			   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+			   <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+			   <a href="#"><i class="fa-brands fa-twitter"></i></a>
+			  
+			  
+			   
+		</footer>
+	</body>
+		<script src="js/con_java.js"></script>
+</html>
