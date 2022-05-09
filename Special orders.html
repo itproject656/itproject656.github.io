@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Special orders.css">
+    <script src="js/Special orders.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: cursive;
+            background-color: #184C78;
+        }
+
+        header {
+            background-color: #184C78;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 200px;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: bold;
+            margin-left: -50px;
+            font-size: 1.8em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .loginsignup a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 500;
+            padding-left: 30px;
+            position: relative;
+            left: 100px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .loginsignup a:hover {
+            color: #918a7d;
+        }
+
+
+        #mainbox {
+
+            position: fixed;
+            left: 20px;
+            width: 50px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+
+
+            color: #FFFFFF;
+            font-size: 30px;
+            margin-bottom: 10px;
+
+            text-transform: uppercase;
+        }
+
+        #menu {
+            transition: 0.6s;
+        }
+
+
+        .sidemenu {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+
+            width: 0px;
+            background-color: #184C78;
+            z-index: 1;
+            padding-top: 100px;
+            overflow: hidden;
+            transition: all 0.3s;
+
+
+        }
+
+        .sidemenu a {
+            padding: 8px;
+            font-size: 30px;
+            color: #FFFFFF;
+            display: block;
+            text-decoration: none;
+            justify-content: space-between;
+
+            margin-bottom: 30px;
+        }
+
+        .sidemenu i {
+            margin-right: 8px;
+        }
+
+
+
+        .sidemenu a:hover {
+
+            color: #FFFFFF;
+            margin-left: 10px;
+            transition: 0.2s;
+            top: 0px;
+        }
+
+        .sidemenu .closebtn {
+            color: #FFFFFF;
+            position: absolute;
+            top: 0px;
+        }
+
+
+        .active {
+            color: #FFFFFF;
+            background: #918a7d;
+        }
+
+        .image img {
+            width: 100%;
+            height: calc();
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .title h2 {
+            font-size: 2em;
+        }
+
+        .title h1 {
+            width: fit-content;
+            margin-left: 620px;
+            font-size: 4em;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .main,
+        .Package,
+        .Dreaming,
+        .Travel {
+            height: 600px;
+            width: 350px;
+            text-align: center;
+            background-color: #8dcaff;
+            box-shadow: 8px 8px black;
+        }
+
+
+        div img {
+            width: 350px;
+            height: 300px;
+        }
+
+        .content {}
+
+        .content h2 {
+            font-size: 2em;
+            
+        }
+
+        .content p {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        h3 {
+            margin-top: 20px;
+            background-color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>SeaLandin</h2>
+    </header>
+    <header>
+        <a href='#home' class="logo">SeaLandin</a>
+        <nav class="loginsignup">
+            <a href="login.html">login</a>
+            <a href="sign up 2.html">sign up</a>
+        </nav>
+        <div id="mainbox" onclick="openFunction();">&#9776;</div>
+        <div id="menu" class="sidemenu">
+            <a href="home.html" class=""><i class="fa-solid fa-house-chimney"></i>home</a>
+            <a href="offers.html"><i class="fa-solid fa-hand-holding-dollar"></i>offers</a>
+            <a href="Avilable days.html"><i class="fa-solid fa-calendar"></i>available days</a>
+            
+            <a href="feedback.html"><i class="fa-solid fa-question"></i>Feedback</a>
+            <a href="" class="closebtn" onclick="closeFunction">&times;</a>
+        </div>
+
+    </header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <section>
+        <div class="image">
+            <img src="Special orders (2).jpg" alt="">
+        </div>
+        <div class="title">
+            <h2>Welcome</h2>
+            <h1>SeaLandin</h1>
+        </div>
+        <div class="boxes">
+            <div class="main">
+                <img src="Special orders1.jfif" alt="">
+                <div class="content">
+                    <h2>Special offers</h2>
+                    <p>Explore the latest deals, special offers and packages from the SeaLandin. Experience something
+                        new,
+                        from
+                        golfing to spa indulgence, at our historic hotel.</p>
+                    <h3><a href="booking.html">Book now</a></h3>
+                </div>
+            </div>
+            <div class="Package">
+                <img src="Special orders2.jpg" alt="">
+                <div class="content">
+                    <h2>Celebration Package</h2>
+                    <p>
+                        Celebrate your special event at the SeaLandin. whether it be a Wedding Day, anniversary,
+                        Birthday or
+                        Baby Moon, let us make your special day memorabl
+                        
+                    </p>
+                    <h3><a href="booking.html">Book now</a></h3>
+                </div>
+            </div>
+            <div class="Dreaming">
+                <img src="Special orders (3).jpg" alt="">
+                <div class="content">
+                    <h2>Califonia dreaming</h2>
+                    <p>Dreaming of blue skies, warm weather, and the open road? Cruise into our Califonia Dreaming offer
+                        and
+                        save 15%</p>
+                    <h3><a href="booking.html">Book now</a></h3>
+                </div>
+            </div>
+            <div class="Travel">
+                <img src="Special orders4.jpeg" alt="">
+                <div class="content">
+                    <h2>Travel & Save - Up to 15% Off</h2>
+                    <p>
+                        Your next memory making getaway is closer than you think. Save up to 15% off the best available
+                        rate
+                        for
+                        Non SeaLandin Honors members and up to
+                    </p>
+                    <a href="luxury rooms.html">Luxury rooms</a>
+                    <h3><a href="booking.html">Book now</a></h3>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <h5>contact</h5>
+        <p>Telephone:<br>01156722309<br>
+            Fax:<br>27958048<br>
+            reservation:<br>01096360003<br> 01030030030
+        </p>
+
+
+
+        <h3>SeaLandin</h3>
+
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+
+
+    </footer>
+</body>
+
+
+</html>
