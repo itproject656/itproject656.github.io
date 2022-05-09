@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+      font-family: 'poppins',sans-serif;
+       margin:0;
+       padding:0;
+       box-sizing: border-box;
+       scroll-behavior:smooth;
+   }
+header{
+      background-color:#184C78;
+      position:fixed;
+      width:100%;
+      z-index:999;
+      display:flex;
+      justify-content:space-between;
+      padding:10px 200px;
+      
+  }
+  
+  .logo{
+      text-decoration:none;
+      color:#FFFFFF;
+      font-weight: bold;
+      margin-left: -50px;
+      font-size:1.8em;
+      font-family:'Times New Roman', Times, serif;
+      }
+  
+  .loginsignup a{
+      color:#FFFFFF;
+      text-decoration:none;
+      font-size:1.5em;
+      font-weight:500;
+      padding-left:30px;
+      position: relative;
+      left: 100px;
+      font-family:'Times New Roman', Times, serif;
+  }
+  
+  .loginsignup a:hover{
+      color: #918a7d;
+  }
+  
+  #mainbox{
+  
+      position:fixed;
+      left: 20px; 
+      width: 50px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    
+      
+      color: #FFFFFF;
+      font-size: 30px;
+      margin-bottom: 10px;
+     
+      text-transform: uppercase;
+  }
+  
+  #menu{
+      transition: 0.6s;
+  }
+  
+  
+  .sidemenu{
+      position: fixed;
+      top: 0px;
+      left:0px;
+      height: 100%;
+      
+      width:0px;
+      background-color:#184C78; 
+      z-index: 1;
+      padding-top: 100px;
+      overflow: hidden;
+      transition: all 0.3s;
+      
+  
+  }
+  .sidemenu a{
+      padding: 8px;
+      font-size: 30px;
+      color: #FFFFFF;
+      display: block;
+      text-decoration: none;
+       justify-content:space-between;
+      
+       margin-bottom: 30px;
+  }
+  .sidemenu i{
+      margin-right: 8px;
+  }
+  
+  
+  
+  .sidemenu a:hover{
+  
+      color: #FFFFFF;
+      margin-left: 10px;
+      transition: 0.2s;
+      top: 0px;
+  }
+  
+  .sidemenu .closebtn{
+      color: #FFFFFF;
+      position: absolute;
+      top: 0px;
+    }
+  
+  
+  .active{
+      color: #FFFFFF;
+      background: #918a7d;
+  }
+   
+
+
+
+.book{
+    
+     position: relative;
+     top:50px;
+     color:#fff;
+    padding: 40px 60px ;
+}
+.book-form{
+      background-color: #184C78;
+      display: grid;
+     
+}
+.form-item{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.book-form input[type = "submit" ]{
+      margin: 18px 0 0 0;
+      background-image:url(imges/div2.jpg);
+      color: red;
+      border: 1px solid #fff;
+}
+.book-form label, .book-form input {
+      width: 100%;
+}
+.book-form label {
+      font-weight: 600;
+      word-spacing: 5px;
+      padding-bottom: 8px;
+}
+.book-form input:not(.btn) {
+      margin: 4px 0 16px 0;
+      padding: 12px 15px;
+      border-radius:5px;
+      font-size: 17px;
+      border:none;
+}
+.book-form input:focus{
+      outline: 0;
+      box-shadow: 0 0 7px rgba(0,0,0,0.4)
+}
+@media(min-width: 768px){
+         .book-form{
+                 grid-template-columns: repeat(2, 1fr);
+                 grid-gap: 24 px;
+         }
+         }
+
+@media(min-width: 1170px){
+         .book-form{
+                 grid-template-columns: repeat(3, 1fr);
+}
+}
+
+.form-item{
+     margin: 50px;
+}
+/* footer */
+footer{
+      background-color: #184C78;
+      margin-top: 50px;
+      
+  }
+  
+  
+   footer h3{
+       color: #FFFFFF;
+       font-family:'Times New Roman', Times, serif;
+       font-size: 50px;
+       margin-left: 15px;
+      position: relative;
+      top:-200px;
+      
+   }
+  
+  
+   footer h5{
+      position: relative;
+      left: 900px;
+      top:30px;
+     color: #FFFFFF;
+     font-size: 30px;
+     
+   }
+  
+  
+   footer p{
+       position: relative;
+       left: 900px;
+      top:40px;
+      color: #FFFFFF;
+     
+   }
+  
+  
+   footer a{
+       color: #FFFFFF;
+       padding: 10px;
+       font-size: 40px;
+       position: relative;
+       top:-150px;
+       
+  
+   }
+   footer a:hover{
+       color: #66635e;
+   }
+   .c{
+         background-color: #184C78;
+         padding: 5px;
+   }
+   .c .form-item{
+         margin: 50px;
+   }
+   img{
+         margin-top: 30px;
+         
+         width: 300px;
+         height: 300px;
+   }
+   .imges{
+         margin-left:70px;
+   }
+   @media(min-width: 1370px){
+      .book-form{
+              grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+      }
+}

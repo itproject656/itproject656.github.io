@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   font-family: 'poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+header{
+    background-color:#184C78;
+    position:fixed;
+    width:100%;
+    z-index:999;
+    display:flex;
+    justify-content:space-between;
+    padding:10px 200px;
+}
+
+.logo{
+    text-decoration:none;
+    color:#FFFFFF;
+    font-weight: bold;
+    margin-left: -50px;
+    font-size:1.8em;
+    font-family:'Times New Roman', Times, serif;
+    }
+
+.loginsignup a{
+    color:#FFFFFF;
+    text-decoration:none;
+    font-size:1.5em;
+    font-weight:500;
+    padding-left:30px;
+    position: relative;
+    left: 100px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.loginsignup a:hover{
+    color: #918a7d;
+}
+
+
+section{
+    padding: 250px 250px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100hv;
+    background:url(imges/سورا-ايا-صوفيا-1024x654.jpg) no-repeat;
+    background-size:cover;
+    background-position:center;
+   
+
+}
+
+.main h2{
+    color:#FFFFFF;
+    font-size:1.4em;
+    font-weight:500;
+
+}
+
+.main h2 span{
+    display:inline-block;
+    margin-top:10px;
+    color:#FA3C61;
+    font-size:3em;
+    font-weight:600 ffont-;
+   font-family:'Times New Roman', Times, serif;
+    font-weight: 1500px;
+}
+
+
+.about {
+    color:aliceblue;
+    background-color:#184C78;
+    text-decoration:none;
+    font-size:1.1em;
+    font-weight:600;
+    display:0.9375em 2.1875em;
+    letter-spacing:1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    padding: 10px;
+    
+}
+
+
+.about:hover{
+    background-color:  #918a7d;
+    transform:scale(1.1);
+  
+}
+
+.contact {
+    color:aliceblue;
+    background-color:#184C78;
+    text-decoration:none;
+    font-size:1.1em;
+    font-weight:600;
+    display:0.9375em 2.1875em;
+    letter-spacing:1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    padding:10px;
+    
+}
+
+
+.contact:hover{
+background-color: #918a7d;
+transform:scale(1.1);
+
+}
+
+.info{
+    margin-top: 30px;
+}
+
+
+
+
+#mainbox{
+  
+    position:fixed;
+    left: 20px; 
+    width: 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  
+    
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 10px;
+   
+    text-transform: uppercase;
+}
+
+#menu{
+    transition: 0.6s;
+}
+
+
+.sidemenu{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    
+    width:0px;
+    background-color:#184C78; 
+    z-index: 1;
+    padding-top: 100px;
+    overflow: hidden;
+    transition: all 0.3s;
+    
+
+}
+.sidemenu a{
+    padding: 8px;
+    font-size: 30px;
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+     justify-content:space-between;
+    
+     margin-bottom: 30px;
+}
+.sidemenu i{
+    margin-right: 8px;
+}
+
+
+
+.sidemenu a:hover{
+
+    color: #FFFFFF;
+    margin-left: 10px;
+    transition: 0.2s;
+    top: 0px;
+}
+
+.sidemenu .closebtn{
+    color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+  }
+
+
+.active{
+    color: #FFFFFF;
+    background: #918a7d;
+}
+
+/* section 2 */
+.x{
+    color: #66635e;
+    text-transform:uppercase;
+}
+
+h2{
+    color:#FA3C61 ;
+    font-family:'Times New Roman', Times, serif;
+    font-size:xx-large;
+}
+.hotel{
+  margin-top: -200px;
+  margin-left: -150px;
+}
+
+.infoo {
+    margin-top: 40px;
+   
+}
+
+.pree{
+    position: relative;
+    left: 650px;
+    bottom: 130px;
+}
+
+/* spa */
+
+.spa{
+    background-image: url(imges/c3.jpg) ;
+    background-size: cover;
+    width: 100%; 
+    height: 500PX;
+    margin-top: -300PX;
+ 
+
+}
+
+.spa h3{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 70px;
+   position: relative;
+   top: 100px;
+   font-family:'Times New Roman', Times, serif;
+  
+}
+.spa p{
+    color: #FFFFFF;
+    text-align: center;
+    font-size:60px;
+   position: relative;
+   top: 140px;
+}
+
+.spa a{
+    color: #FFFFFF;
+    background-color: #184C78;
+    text-decoration: none;
+    position: relative;
+    top:250px;
+    left: 650px;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.spa a:hover{
+    background-color:  #918a7d;
+    transform:scale(1.1);
+
+}
+
+/* events */
+
+.events{
+    background-image: url(imges/Maito_Events_01.jpg) ;
+    background-position: 1px;
+    background-size: cover;
+    width: 100%; 
+    height: 500PX;
+    margin-top: 50pX;
+    
+
+}
+
+
+.events p{
+   
+    color: #FFFFFF;
+    text-align: center;
+    font-size:60px;
+   position: relative;
+   top: 90px;
+  
+
+}
+
+.events h3{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 70px;
+   position: relative;
+   top: 100px;
+   font-family:'Times New Roman', Times, serif;
+
+   position: relative;
+   top: 90px;
+}
+
+.events a{
+    color: #FFFFFF;
+    background-color: #184C78;
+    text-decoration: none;
+    position: relative;
+    top:250px;
+    left: 650px;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.events a:hover{
+    background-color:  #918a7d;
+    transform:scale(1.1);
+
+}
+
+/* offers */
+
+
+.offers{
+    background-image: url(imges/istockphoto-1158249827-612x612.jpg) ;
+    background-size: cover;
+    width: 100%; 
+    height: 500PX;
+    margin-top: 50pX;
+    
+  
+
+}
+
+
+.offers p{
+   
+    color: #FFFFFF;
+    text-align: center;
+    font-size:60px;
+   position: relative;
+   top: 140px;
+  
+
+}
+
+.offers h3{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 70px;
+   position: relative;
+   top: 100px;
+   font-family:'Times New Roman', Times, serif;
+
+   position: relative;
+   top: 140px;
+}
+
+.offers a{
+    color: #FFFFFF;
+    background-color: #184C78;
+    text-decoration: none;
+    position: relative;
+    top:250px;
+    left: 650px;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.offers a:hover{
+    background-color:  #918a7d;
+    transform:scale(1.1);
+
+}
+
+/* services */
+
+.services{
+    background-image: url(imges/Maito-Beach_Events_09-1.jpg) ;
+    background-size: cover;
+    background-position: 20px;
+    width: 100%; 
+    height: 500PX;
+    margin-top: 50pX;
+  
+
+}
+
+
+.services p{
+   
+    color: #FFFFFF;
+    text-align: center;
+    font-size:60px;
+   position: relative;
+   top: 140px;
+  
+
+}
+
+.services h3{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 70px;
+   position: relative;
+   top: 100px;
+   font-family:'Times New Roman', Times, serif;
+
+   position: relative;
+   top: 140px;
+}
+
+.services a{
+    color: #FFFFFF;
+    background-color: #184C78;
+    text-decoration: none;
+    position: relative;
+    top:250px;
+    left: 650px;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.services a:hover{
+    background-color:  #918a7d;
+    transform:scale(1.1);
+
+}
+
+/* checkout */
+.check
+{
+    background-image: url(imges/shutterstock_404442055-1400x500.jpg) ;
+    background-size: cover;
+    background-position: 20px;
+    width: 100%; 
+    height: 500PX;
+    margin-top: 50pX;
+  
+
+}
+
+
+.check p{
+   
+    color: #FFFFFF;
+    text-align: center;
+    font-size:60px;
+   position: relative;
+   top: 140px;
+  
+
+}
+
+.check h3{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 70px;
+   position: relative;
+   top: 100px;
+   font-family:'Times New Roman', Times, serif;
+
+   position: relative;
+   top: 140px;
+}
+
+.check a{
+    color: #FFFFFF;
+    background-color: #184C78;
+    text-decoration: none;
+    position: relative;
+    top:250px;
+    left: 650px;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.check a:hover{
+    background-color:  #918a7d;
+    transform:scale(1.1);
+
+}
+
+/* halls */
+.halls
+{
+    background-image: url(imges/6f57c2d23e3760ec89025b0218a3b480.jpg) ;
+    background-size: cover;
+    background-position: 20px;
+    width: 100%; 
+    height: 500PX;
+    margin-top: 50pX;
+  
+
+}
+
+
+.halls p{
+   
+    color: #FFFFFF;
+    text-align: center;
+    font-size:60px;
+   position: relative;
+   top: 140px;
+  
+
+}
+
+.halls h3{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 70px;
+   position: relative;
+   top: 100px;
+   font-family:'Times New Roman', Times, serif;
+
+   position: relative;
+   top: 140px;
+}
+
+.halls a{
+    color: #FFFFFF;
+    background-color: #184C78;
+    text-decoration: none;
+    position: relative;
+    top:250px;
+    left: 650px;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.halls a:hover{
+    background-color:  #918a7d;
+    transform:scale(1.1);
+
+}
+
+/* rooms */
+.rooms
+{
+    background-image: url(imges/360_F_273119624_DpYqxwJia1SuX06o3oo2ggIu3oCvKC7O.jpg) ;
+    background-size: cover;
+    background-position: 20px;
+    width: 100%; 
+    height: 500PX;
+    margin-top: 50pX;
+  
+
+}
+
+
+.rooms p{
+   
+    color: #FFFFFF;
+    text-align: center;
+    font-size:60px;
+   position: relative;
+   top: 140px;
+  
+
+}
+
+.rooms h3{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 70px;
+   position: relative;
+   top: 100px;
+   font-family:'Times New Roman', Times, serif;
+
+   position: relative;
+   top: 140px;
+}
+
+.rooms a{
+    color: #FFFFFF;
+    background-color: #184C78;
+    text-decoration: none;
+    position: relative;
+    top:250px;
+    left: 650px;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.rooms a:hover{
+    background-color:  #918a7d;
+    transform:scale(1.1);
+
+}
+
+
+/* footer */
+
+footer{
+    background-color: #184C78;
+    margin-top: 50px;
+}
+
+
+ footer h3{
+     color: #FFFFFF;
+     font-family:'Times New Roman', Times, serif;
+     font-size: 50px;
+     margin-left: 15px;
+    position: relative;
+    top:-200px;
+    
+ }
+
+
+ footer h5{
+    position: relative;
+    left: 900px;
+    top:30px;
+   color: #FFFFFF;
+   font-size: 30px;
+   
+ }
+
+
+ footer p{
+     position: relative;
+     left: 900px;
+    top:40px;
+    color: #FFFFFF;
+   
+ }
+
+
+ footer a{
+     color: #FFFFFF;
+     padding: 10px;
+     font-size: 40px;
+     position: relative;
+     top:-150px;
+     
+
+ }
+ footer a:hover{
+     color: #66635e;
+ }

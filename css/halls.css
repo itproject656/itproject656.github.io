@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primaryColor:#fff;
+    --secondaryColor:#42C2FF;
+    --lightColor:#ffffff;
+    --bgColor-1:#4B7BE5;
+    --bgColor-2:#16558F;
+    --padding:25%;
+
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+  background-color:#184C78;
+  position:fixed;
+  width: 100%;
+  height: 7vh;
+  display:flex;
+  justify-content:space-between;
+  padding:10px 200px;
+}
+
+.logo{
+  text-decoration:none;
+  color:#FFFFFF;
+  font-weight: bold;
+  margin-left: -50px;
+  font-size:1.8em;
+  font-family:'Times New Roman', Times, serif;
+ 
+  }
+
+  .loginsignup a{
+    color:#FFFFFF;
+    text-decoration:none;
+    font-size: 1.3em;
+    font-weight: 80;
+    padding-left:30px;
+    position: relative;
+    left: 240px;
+    font-family:'Times New Roman', Times, serif;
+
+  }
+
+.loginsignup a:hover{
+  color: #918a7d;
+}
+#mainbox{
+  
+  position:fixed;
+  left: 20px; 
+  width: 50px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: -10px;
+
+  
+  color: #FFFFFF;
+  font-size: 30px;
+  margin-bottom: 10px;
+ 
+  text-transform: uppercase;
+}
+
+#menu{
+  transition: 0.6s;
+}
+
+
+.sidemenu{
+  position: fixed;
+  top: 0px;
+  left:0px;
+  height: 100%;
+  
+  width:0px;
+  background-color:#184C78; 
+  z-index: 1;
+  padding-top: 100px;
+  overflow: hidden;
+  transition: all 0.3s;
+  
+
+}
+.sidemenu a{
+  padding: 8px;
+  font-size: 30px;
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+   justify-content:space-between;
+  
+   margin-bottom: 30px;
+}
+.sidemenu i{
+  margin-right: 8px;
+}
+
+
+
+.sidemenu a:hover{
+
+  color: #FFFFFF;
+  margin-left: 10px;
+  transition: 0.2s;
+  top: 0px;
+}
+
+.sidemenu .closebtn{
+  color: #FFFFFF;
+  position: absolute;
+  top: 0px;
+}
+
+
+html{
+     font-family:'Josefin Sans',sans-serif ;
+     font-size: 16px;
+     color: var(--primaryColor);
+}
+.home{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+
+h2{
+  font-size: 4em;
+  letter-spacing: 0.1rem;
+  margin: 3rem;
+  width: 100%;
+  
+}
+nav{
+  color:#184c78;
+  padding-top: 0.5rem;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  text-decoration-line: underline;
+  font-family: 'Times New Roman', Times, serif;
+  
+  
+ 
+}
+ 
+ .blog .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .blog .box-container .box{
+    background:#184c78;
+    margin:1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.9);
+    overflow: hidden;
+    flex:0.3 0.3 19rem;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .blog .box-container .box:hover{
+      transform: scale(1.1);
+  }
+  
+  .blog .box-container .box img{
+    height:20rem;
+    width:100%;
+    object-fit: cover;
+  }
+  
+  .blog .box-container .box .info{
+    padding:2rem;
+  }
+  
+  .blog .box-container .box .info h3{
+    color:var(--lightColor);
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  
+  .blog .box-container .box .info p{
+    color:#ffffff;
+    font-size: 1.5rem;
+    padding:1rem 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border:.2rem solid var(--primaryColor);
+    font-size: 1.7rem;
+    padding:.5rem 2rem;
+    color: var(--black);
+    cursor: pointer;
+    background: var(--bgColor-2);
+    text-decoration: none;
+  }
+  
+  .btn:hover{
+    background: var(--pink);
+    border-color: var(--pink);
+    color:#fff;
+  }
+  footer{
+    background-color: #184C78;
+    margin-top: 50px;
+}
+
+
+ footer h3{
+     color: #FFFFFF;
+     font-family:'Times New Roman', Times, serif;
+     font-size: 50px;
+     margin-left: 15px;
+    position: relative;
+    top:-160px;
+    
+ }
+
+
+ footer h5{
+    position: relative;
+    left: 800px;
+    top:30px;
+   color: #FFFFFF;
+   font-size: 30px;
+   
+ }
+
+
+ footer p{
+     position: relative;
+     left: 800px;
+    top:40px;
+    color: #FFFFFF;
+   
+ }
+
+
+ footer a{
+     color: #FFFFFF;
+     padding: 20px;
+     font-size: 40px;
+     position: relative;
+     top:-120px;
+     
+
+ }
+ footer a:hover{
+     color: #66635e;
+ }
+
+  
