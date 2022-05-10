@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'poppins',sans-serif;
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+     scroll-behavior:smooth;
+ }
+ body{
+   overflow-x: hidden;
+ }
+
+ header{
+     background-color:#184C78;
+     position:fixed;
+     width:100%;
+     z-index:999;
+     display:flex;
+     justify-content:space-between;
+     padding:10px 200px;
+ }
+ 
+ .logo{
+     text-decoration:none;
+     color:#FFFFFF;
+     font-weight: bold;
+     margin-left: -50px;
+     font-size:1.8em;
+     font-family:'Times New Roman', Times, serif;
+     }
+ 
+ .loginsignup a{
+     color:#FFFFFF;
+     text-decoration:none;
+     font-size:1.5em;
+     font-weight:500;
+     padding-left:30px;
+     position: relative;
+     left: 100px;
+     font-family:'Times New Roman', Times, serif;
+ }
+ 
+ .loginsignup a:hover{
+     color: #918a7d;
+ }
+ 
+ 
+ #mainbox{
+  
+    position:fixed;
+    left: 20px; 
+    width: 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  
+    
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 10px;
+   
+    text-transform: uppercase;
+}
+
+#menu{
+    transition: 0.6s;
+}
+
+
+.sidemenu{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    
+    width:0px;
+    background-color:#184C78; 
+    z-index: 1;
+    padding-top: 100px;
+    overflow: hidden;
+    transition: all 0.3s;
+    
+
+}
+.sidemenu a{
+    padding: 8px;
+    font-size: 30px;
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+     justify-content:space-between;
+    
+     margin-bottom: 30px;
+}
+.sidemenu i{
+    margin-right: 8px;
+}
+
+
+
+.sidemenu a:hover{
+
+    color: #FFFFFF;
+    margin-left: 10px;
+    transition: 0.2s;
+    top: 0px;
+}
+
+.sidemenu .closebtn{
+    color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+  }
+
+
+.active{
+    color: #FFFFFF;
+    background: #918a7d;
+}
+footer{
+    background-color: #184C78;
+    margin-top: 50px;
+}
+
+
+ footer h3{
+     color: #FFFFFF;
+     font-family:'Times New Roman', Times, serif;
+     font-size: 50px;
+     margin-left: 15px;
+    position: relative;
+    top:-200px;
+    
+ }
+
+
+ footer h5{
+    position: relative;
+    left: 900px;
+    top:30px;
+   color: #FFFFFF;
+   font-size: 30px;
+   
+ }
+
+
+ footer p{
+     position: relative;
+     left: 900px;
+    top:40px;
+    color: #FFFFFF;
+   
+ }
+
+
+ footer a{
+     color: #FFFFFF;
+     padding: 10px;
+     font-size: 40px;
+     position: relative;
+     top:-150px;
+     
+
+ }
+ footer a:hover{
+     color: #66635e;
+ }
+ 
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background: linear-gradient(to right, #c4c4ca, #DAE2F8);
+  background: -webkit-linear-gradient(to right, #c4c4ca, #DAE2F8);
+  padding: 20px;
+}
+</style>
+<script>
+  function openFunction(){
+    document.getElementById('menu').style.width='200px';
+}
+
+function closeFunction(){
+    document.getElementById('menu').style.width=' 0px';
+}
+
+window.addEventListener('mouseup',function(event){
+ 
+
+    var box=document.getElementById('menu');
+    if (EventTarget.target !=box){
+        box.style.width ='0px';
+    }
+})
+
+
+</script>
+</head>
+<body>
+  <header>
+    <a href='#home'class="logo">SeaLandin</a>
+    <nav class="loginsignup">
+      <a href="login.html">login</a>
+      <a href="sign up 2.html">sign up</a>
+    </nav>
+    <div id="mainbox" onclick="openFunction();" >&#9776;</div>
+    <div id="menu" class="sidemenu">
+      <a href="index.html"class=""><i class="fa-solid fa-house-chimney"></i>home</a>
+      <a href="offers.html"><i class="fa-solid fa-hand-holding-dollar"></i>offers</a>
+      <a href="Avilable days.html"><i class="fa-solid fa-calendar"></i>available days</a>
+      <a href="feedback.html"><i class="fa-solid fa-question"></i>Feedback</a>
+      <a href=""class="closebtn" onclick="closeFunction">&times;</a>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+   
+  </header>
+
+    <h1 class="h1-tag">Your Feedback Is important For Us</h1>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
+
+    <label for=">Email_Adress">Email_Address</label>
+    <input type="text" id="Email_Address" name="Email_Address" placeholder="Your email -address..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="egypt">Egypt</option>
+      <option value="france">France</option>
+      <option value="usa">USA</option>
+     
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<footer>
+  <h5>contact</h5>
+  <p>Telephone:<br>01156722309<br>
+    Fax:<br>27958048<br>
+    reservation:<br>01096360003<br> 01030030030
+ </p>
+
+ 
+
+  <h3>SeaLandin</h3>
+
+ <a href="#"><i class="fa-brands fa-facebook"></i></a>
+ <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+ <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+
+ 
+</footer>
+
+
+
+</body>
+</html>

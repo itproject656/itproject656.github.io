@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href='#home'class="logo">SeaLandin</a>
+        <nav class="loginsignup">
+          <a href="login.html">login</a>
+          <a href="sign up 2.html">sign up</a>
+        </nav>
+        <div id="mainbox" onclick="openFunction();" >&#9776;</div>
+        <div id="menu" class="sidemenu">
+          <a href="index.html"class=""><i class="fa-solid fa-house-chimney"></i>home</a>
+          <a href="offers.html"><i class="fa-solid fa-hand-holding-dollar"></i>offers</a>
+          <a href="Avilable days.html"><i class="fa-solid fa-calendar"></i>available days</a>
+          
+          <a href="feedback.html"><i class="fa-solid fa-question"></i>Feedback</a>
+          <a href=""class="closebtn" onclick="closeFunction">&times;</a>
+        </div>
+       
+      </header>
+      
+    <div class = "book" >
+        <form class = "book-form" >
+            <div class="c">
+                <div class = "form-item" >
+                    <label for = "activities" > Activities: </label >
+                    <select class = "options" id = "activities">
+                         <option value = "0" > Diving </option>
+                         <option value = "0"> Water Paracailing </option>
+                         <option value = "0" > Camping </option>
+                         <option value = "0" > Spa </option>
+                         <option value = "0" > Safari </option>
+                         <option value = "0"> Gym </option>
+                    </select>
+                 </div> 
+              <div class =  "form-item" >
+                   <label for = "checkin-date" > CheckIn Date : </label>
+                   <input type = "date" id = "check in -date">
+               </div>
+               <div class = "form-item" >
+                  <label for = "price"> price: </label>
+                  <input type = "number" min = "20$" value = "20$" id = "price" >
+               </div>
+              <div class = "form-item" >
+                 <label for = "adults" > Adults : </label >
+                 <select class = "options" id = "adults" >
+                      <option value = "0" > 0 </option>
+                      <option value = "0"> 1 </option>
+                      <option value = "0"> 2 </option>
+                      <option value = "0" > 3 </option>
+                      <option value = "0"> 4 </option>
+                      <option value = "0" > 5 </option>
+               </div>
+               
+                   <div class = "form-item" id="book" >
+                     <input type = "submit" class = "btn" value = "Book Now" >
+                   </div>
+                   </form>
+                </div>
+           
+                </div>
+    </div>
+    <div class="images">
+       <img src="images/WhatsApp Image 2022-05-08 at 1051.06 PM.jpeg">
+       <img src="images/WhatsApp Image 2022-05-08 at 10.51.10 PM.jpeg">
+       <img src="images/WhatsApp Image 2022-05-08 at 11.31.04 PM.jpeg">
+       <img src="images/WhatsApp Image 2022-05-08 at 5.25.02 PM.jpeg">
+    </div>
+    <footer>
+        <h5>contact</h5>
+        <p>Telephone:<br>01156722309<br>
+          Fax:<br>27958048<br>
+          reservation:<br>01096360003<br> 01030030030
+       </p>
+     
+       
+      
+        <h3>SeaLandin</h3>
+    
+       <a href="#"><i class="fa-brands fa-facebook"></i></a>
+       <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+       <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      
+      
+       
+      </footer>
+      <script src="js/booking.js"></script>
+</body>
+</html>

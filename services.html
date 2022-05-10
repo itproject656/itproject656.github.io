@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <script src="js/script.js"></script>
+  <style>
+    body{
+      overflow-x: hidden;
+    }
+  </style>
+  
+  <head>
+      <body>
+        <header>
+          <a href='#home'class="logo">SeaLandin</a>
+          <nav class="loginsignup">
+            <a href="login.html">login</a>
+            <a href="sign up 2.html">sign up</a>
+          </nav>
+          <div id="mainbox" onclick="openFunction();" >&#9776;</div>
+          <div id="menu" class="sidemenu">
+            <a href="index.html"class=""><i class="fa-solid fa-house-chimney"></i>home</a>
+            <a href="offers.html"><i class="fa-solid fa-hand-holding-dollar"></i>offers</a>
+            <a href="Avilable days.html"><i class="fa-solid fa-calendar"></i>available days</a>
+           
+            <a href="feedback.html"><i class="fa-solid fa-question"></i>Feedback</a>
+            <a href=""class="closebtn" onclick="closeFunction">&times;</a>
+          </div>
+         
+        </header>
+        <section class="restaurant top" id="restaurant">
+            <div class="container flex">
+              <div class="left">
+                <img src="images/re.jpg" alt="">
+              </div>
+              <div class="right">
+                <div class="text">
+                  <h2>Our Restaurant</h2>
+                  <p> it is a very nice and large restaurant and it has a variety of food.</p>
+                </div>
+                <div class="accordionWrapper">
+                  <div class="accordionItem open">
+                    <h2 class="accordionIHeading">Italian food</h2>
+                    <div class="accordionItemContent">
+                      <p>Napoletana pizza , risotto , polenta , truffles , lasagne and gelato.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordionItem close">
+                    <h2 class="accordionIHeading">Mexican food</h2>
+                    <div class="accordionItemContent">
+                      <p>pozole , tacos al pastor , chiles en nogada , elote , enchiladas and mole.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordionItem close">
+                    <h2 class="accordionIHeading"> egyption food</h2>
+                    <div class="accordionItemContent">
+                      <p>kushari , mulukhia , fatta , ful medames and alexandrian liver and sausages
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordionItem close">
+                    <h2 class="accordionIHeading">japanese food</h2>
+                    <div class="accordionItemContent">
+                      <p> sushi , okonomiyaki , teppanyaki , yakitori , yakiniku and fugu
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <script>
+            var accItem = document.getElementsByClassName('accordionItem');
+            var accHD = document.getElementsByClassName('accordionIHeading');
+        
+            for (i = 0; i < accHD.length; i++) {
+              accHD[i].addEventListener('click', toggleItem, false);
+            }
+        
+            function toggleItem() {
+              var itemClass = this.parentNode.className;
+              for (var i = 0; i < accItem.length; i++) {
+                accItem[i].className = 'accordionItem close';
+              }
+              if (itemClass == 'accordionItem close') {
+                this.parentNode.className = 'accordionItem open';
+              }
+            }
+          </script>
+<section class="gallary mtop " id="gallary">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h1>WELCOME TO OUR PHOTO GALLERY</h1>
+          <h5>Photo Gallery of Our Hotel</h5>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW GALLERY</button>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="images/g1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/g2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/g3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/g4.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+<center>
+<b>
+  <h1>hotel security</h1>
+</b>
+</center>
+<p><b>our hotel is very safe and has a lot of guards and surveillance cameras with very high technologies</b></p>
+<iframe width="900" height="506" src="https://www.youtube.com/embed/A_nV-jMjKwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope
+; picture-in-picture" allowfullscreen></iframe>
+<footer>
+  <h5>contact</h5>
+  <p>Telephone:<br>01156722309<br>
+    Fax:<br>27958048<br>
+    reservation:<br>01096360003<br> 01030030030
+ </p>
+
+ 
+
+  <h3>SeaLandin</h3>
+
+ <a href="#"><i class="fa-brands fa-facebook"></i></a>
+ <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+ <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+
+ 
+</footer>
+      </body>
+  </head>

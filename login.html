@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html><head>
+
+
+  <script>
+        
+
+function openFunction(){
+    document.getElementById('menu').style.width='200px';
+}
+
+function closeFunction(){
+    document.getElementById('menu').style.width=' 0px';
+}
+
+window.addEventListener('mouseup',function(event){
+ 
+  
+
+    var box=document.getElementById('menu');
+    if (EventTarget.target !=box){
+        box.style.width ='0px';
+    }
+})
+      
+  </script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="Sign%20Up_files/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link href="Sign%20Up_files/css2.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+<body >
+
+	<header>
+		<a href='#home'class="logo">SeaLandin</a>
+		<nav class="loginsignup">
+		  <a href="login.html">login</a>
+		  <a href="sign up 2.html">sign up</a>
+		</nav>
+		<div id="mainbox" onclick="openFunction();" >&#9776;</div>
+		<div id="menu" class="sidemenu">
+		  <a href="index.html"><i class="fa-solid fa-house-chimney"></i>home</a>
+		  <a href="offers.html"><i class="fa-solid fa-hand-holding-dollar"></i>offers</a>
+		  <a href="Avilable days.html"><i class="fa-solid fa-calendar"></i>available days</a>
+		  
+		  <a href="feedback.html"><i class="fa-solid fa-question"></i>Feedback</a>
+		  <a href=""class="closebtn" onclick="closeFunction">&times;</a>
+		</div>
+	   
+	  </header>
+    
+   
+	<div>
+        
+    	<h1>Login</h1>
+        <form >
+        	<label> username:</label> <br>
+            <input type="text" placeholder="username"> <br> <br>
+            <label>Password:</label>  <br>
+            <input type="password" placeholder="********"> <br> <br>	    
+            <input type="button" value="Reset"> 
+            <input type="button" value="login">
+<p style="background-color:white;">Don't have an account? <a href="sign up 2.html">sign up</a></p> 
+<p>By clicking the submit button,you agree to our <br>
+    <a href="#">Terms and condition </a> and <a href="#">Policy and Privacy</a> </p>
+    </form>
+</div>
+
+<footer>
+    <h5>contact</h5>
+    <p>Telephone:<br>01156722309<br>
+      Fax:<br>27958048<br>
+      reservation:<br>01096360003<br> 01030030030
+   </p>
+ 
+   
+  
+    <h3>SeaLandin</h3>
+
+   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+   <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+   <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  
+  
+   
+  </footer>
+   <script src="all.js"></script>
+
+
+
+</body></html>
