@@ -52,7 +52,7 @@ body{
   	border: 1px solid gray;
   	border-radius: 10px;
 }
-	input[type="button"]{
+	input [type="reset"],[type="reset"]{
 		width: 320px;
   		height: 35px;
   		margin-top: 10px;
@@ -60,6 +60,16 @@ body{
   		color: white;
   		font-size: 18px;
     }
+
+	input [type="submit"],[type="submit"]{
+		width: 320px;
+  		height: 35px;
+  		margin-top: 10px;
+  		background-color: MediumSeaGreen;
+  		color: white;
+  		font-size: 18px;
+    }
+
 
 	footer h3{
 		color: #FFFFFF;
