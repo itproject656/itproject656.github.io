@@ -134,7 +134,7 @@ body
     width: 900px;
     height: 450px;
     background-color: #E9DCC9;
-    background-image:url("Villa-6.jpg");
+    background-image:url("images/Villa-6.jpg");
     margin: 100px auto;
     margin-top: 10px;
     animation: slide 25s infinite;
@@ -149,22 +149,22 @@ body
 
    25%
     {
-    background-image :url("image2.jpg");
+    background-image :url("images/image2.jpg");
     background-size: cover;
     }
     50%
     {
-    background-image :url("image3.jpg");
+    background-image :url("images/image3.jpg");
     background-size: cover;
     }
     75%
     {
-    background-image :url("image4.jpg");
+    background-image :url("images/image4.jpg");
     background-size: cover;
     }
     100%
     {
-    background-image :url("Villa-6.jpg");
+    background-image :url("images/Villa-6.jpg");
     background-size: cover;
     }
 }
@@ -191,7 +191,7 @@ line-height: 1.5cm;
     width: 39cm;
     height:550px ;
     background-repeat: no-repeat;
-background-image: url("div2.jpg");
+background-image: url("images/div2.jpg");
 border-style: double;
 
 background-size: 14cm;
@@ -206,7 +206,7 @@ line-height: 1cm ;
     
    color: #FAF9F6;
    position: relative;
-   left: 20cm;
+   left: 16cm;
    bottom: -5cm;
 
 }
@@ -242,7 +242,7 @@ line-height: 1cm ;
     width: 42cm;
     height:500px ;
     background-repeat: no-repeat;
-background-image: url("div24.jpg");
+background-image: url("images/div24.jpg");
 background-size: 18cm;
 background-color: #FAF9F6;
 border-style: double;
